@@ -116,4 +116,3 @@ async function logoutUser(username, password) {
 	sessionStorage.removeItem("username");
 	sessionStorage.removeItem("authToken");
 }
-
