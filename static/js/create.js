@@ -46,7 +46,13 @@ function createForm(schema) {
     display_required_only: false
   }
 
-  const editor = new JSONEditor(body, formOptions);
+  // const editor = new JSONEditor(body, formOptions);
+
+  // console.log(schema['properties']);
+
+  $('#editor_holder').alpaca({
+    "schema": schema
+  });
 }
 
 // Run the functions on load or change
